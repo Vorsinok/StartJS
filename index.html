@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="wrapper">
+        <div class="form">
+            <form action="#" id="form" class="form__body">
+                <h1 class="form__title">Міні Форум</h1>
+                <div class="form__item">
+                    <label for="forName" class="form__label">
+                        Ім'я*:
+                    </label>
+                    <input id="forName" type="text" name="name" class="form__input _req">
+                </div>
+                <div class="form__item">
+                    <label for="forEmail" class="form__label">
+                        E-mail*:
+                    </label>
+                    <input id="forEmail" type="email" name="email" class="form__input _req _email">
+                </div>
+                <div class="form__item">
+                    <label for="forMessage" class="form__label">Повідомлення: </label>
+                    <textarea name="message" id="forMessage" class="form__input"></textarea>
+                </div>
+                <div class="form__item">
+                    <div class="form__label">
+                        Додати фото
+                    </div>
+                    <div class="file">
+                        <div class="file__item">
+                            <input id="formImage" accept=".jpg, .png, .gif" type="file" name="image"
+                                class="file__input">
+                            <div class="file__button">Вибрати</div>
+                        </div>
+                        <div id="formPreview" class="file__preview"></div>
+                    </div>
+                </div>
+                <button type="submit" class="form__button">Відправити</button>
+            </form>
+        </div>
+</body>
+</html>
